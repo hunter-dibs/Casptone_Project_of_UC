@@ -1,0 +1,2 @@
+-r requirements-modeling.txt
+torch>=2.2,<3

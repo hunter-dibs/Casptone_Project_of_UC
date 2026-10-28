@@ -1,0 +1,54 @@
+{
+  "prepared_dir": "dataset/processed/multimodal",
+  "policy": "retrospective",
+  "mri_version": "fs51",
+  "output_dir": "artifactsv2/primary",
+  "report_dir": "artifactsv2/primary/reports",
+  "seed": 42,
+  "folds": 5,
+  "threshold": 0.5,
+  "bootstrap_repetitions": 1000,
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "parameters": {
+    "logistic_regression": {
+      "C": 1,
+      "max_iter": 3000,
+      "solver": "lbfgs"
+    },
+    "random_forest": {
+      "n_estimators": 300,
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "n_jobs": 1
+    },
+    "xgboost": {
+      "n_estimators": 200,
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1,
+      "tree_method": "hist",
+      "n_jobs": 1
+    }
+  },
+  "explanations": {
+    "experiments": [
+      "mri_fusion",
+      "csf_fusion",
+      "trimodal_fusion"
+    ],
+    "models": [
+      "logistic_regression",
+      "xgboost"
+    ],
+    "background_participants": 30,
+    "permutation_cycles": 5,
+    "top_features": 5
+  }
+}

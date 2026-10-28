@@ -1,0 +1,9 @@
+{
+  "primary_config": "config/workflow.json",
+  "output_dir": "dataset/archive/original-sensitivity/mri_csf",
+  "report_dir": "reports/sensitivity/mri_csf",
+  "lookback_days": 90,
+  "horizon_months": 36,
+  "exploratory_max_collection_offset_days": -1,
+  "require_known_processing_date": true
+}

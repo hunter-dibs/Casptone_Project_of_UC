@@ -1,0 +1,38 @@
+{
+  "frozen_dir": "dataset/processed/original",
+  "frozen_model_manifest": "dataset/cohorts/original/manifest.json",
+  "preparation_manifest": "dataset/processed/original/reports/run_manifest.json",
+  "identifier_crosswalk": "dataset/processed/original/reports/identifier_crosswalk.csv",
+  "mri_fs7": "dataset/raw/mri/UCSFFSX7_09Oct2026.csv",
+  "mri_fs51": "dataset/raw/mri/UCSFFSX51_11_08_19_09Oct2026.csv",
+  "csf": "dataset/raw/csf/UPENNBIOMK_ROCHE_ELECSYS_09Oct2026.csv",
+  "key_mri": "dataset/raw/original/tables/MCI_AD_prediction_Key_MRI_19Sep2026.csv",
+  "dictionary": "dataset/raw/mri/DATADIC_09Oct2026.csv",
+  "csf_dictionary": "dataset/raw/csf/DATADIC_09Oct2026.csv",
+  "methods": [
+    "dataset/raw/mri/UCSF_FreeSurfer_Methods_and_QC_OFFICIAL_20140131.pdf",
+    "dataset/raw/csf/UPENNBIOMK_ROCHE_ELECSYS_METHODS_20231109.pdf"
+  ],
+  "output_dir": "dataset/processed/multimodal",
+  "lookback_days": 90,
+  "csf_verified_batches": [
+    "UPENNBIOMK9",
+    "UPENNBIOMK11",
+    "UPENNBIOMK12",
+    "UPENNBIOMK13"
+  ],
+  "csf_limits": {
+    "ABETA42": [
+      200,
+      1700
+    ],
+    "TAU": [
+      80,
+      1300
+    ],
+    "PTAU": [
+      8,
+      120
+    ]
+  }
+}

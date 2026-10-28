@@ -1,0 +1,4 @@
+# The workflow and validation use Python 3.10+ standard library only.
+# These dependencies are needed only for the optional notebook interface.
+jupyterlab>=4.2,<5
+ipykernel>=6.29,<8

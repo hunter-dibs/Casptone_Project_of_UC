@@ -1,0 +1,46 @@
+{
+  "horizon_months": 36,
+  "followup_tolerance_days": 0,
+  "lookback_days": {
+    "PTDEMOG": 90,
+    "MMSE": 90,
+    "ADAS": 90,
+    "NEUROBAT": 90,
+    "FAQ": 90,
+    "UCSFFSX7": 90,
+    "UPENNBIOMK_ROCHE_ELECSYS": 90
+  },
+  "availability_policy": "result_by_baseline",
+  "apoe_policy": "tested_by_baseline",
+  "csf_verified_batches": [
+    "UPENNBIOMK12"
+  ],
+  "csf_limits": {
+    "ABETA42": [
+      200,
+      1700
+    ],
+    "ABETA40": [
+      11,
+      40300
+    ],
+    "TAU": [
+      80,
+      1300
+    ],
+    "PTAU": [
+      8,
+      120
+    ]
+  },
+  "timing_sensitivity_days": [
+    0,
+    30,
+    60,
+    90,
+    180
+  ],
+  "raw_dir": "dataset/raw/original",
+  "output_dir": "dataset/processed/original",
+  "report_dir": "dataset/processed/original/reports"
+}

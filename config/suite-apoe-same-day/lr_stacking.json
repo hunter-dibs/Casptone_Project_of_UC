@@ -1,0 +1,40 @@
+{
+  "baseline_run": "dataset/cohorts/apoe_same_day",
+  "run_name": "lr_stacking",
+  "experiments": [
+    "apoe_clinical",
+    "apoe_fusion",
+    "apoe_csf_clinical",
+    "apoe_csf_clinical_apoe",
+    "apoe_csf_clinical_csf",
+    "apoe_csf_fusion"
+  ],
+  "seed": 42,
+  "inner_folds": 3,
+  "stacking_folds": 3,
+  "threshold": 0.5,
+  "bootstrap_repetitions": 1000,
+  "max_iter": 10000,
+  "meta_C_candidates": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "baseline_C_candidates": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "view_C": {
+    "linear": 0.1,
+    "spline": 0.1,
+    "interactions": 0.03,
+    "rbf": 0.1
+  },
+  "spline_knots": 4,
+  "spline_degree": 2,
+  "rbf_components": 128,
+  "rbf_gamma": 0.05,
+  "input_format": "v2",
+  "output_root": "artifactsv2/suite_apoe_same_day"
+}

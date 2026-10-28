@@ -1,0 +1,23 @@
+# Local participant data, prepared cohorts, and audit records.
+dataset/**
+!dataset/.gitignore
+!dataset/README.md
+
+# Model artifacts and participant-level predictions.
+artifacts/
+artifactsv2/
+reports/
+*.csv
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.executed.ipynb
+.venv/
+.venv-*/
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+.env
+.env.local
+.DS_Store

@@ -1,0 +1,4 @@
+# Participant data and their provenance stay local; publish this guide only.
+*
+!.gitignore
+!README.md

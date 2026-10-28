@@ -1,0 +1,56 @@
+{
+  "baseline_run": "dataset/cohorts/same_day",
+  "run_name": "deep_learning",
+  "experiments": [
+    "mri_clinical",
+    "mri_fusion",
+    "csf_clinical",
+    "csf_fusion",
+    "trimodal_clinical",
+    "trimodal_clinical_mri",
+    "trimodal_clinical_csf",
+    "trimodal_fusion"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "seed": 42,
+  "inner_folds": 3,
+  "threshold": 0.5,
+  "bootstrap_repetitions": 1000,
+  "device": "auto",
+  "torch_threads": 1,
+  "training": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 32,
+    "max_epochs": 300,
+    "patience": 25,
+    "min_delta": 0.0001
+  },
+  "mlp": {
+    "hidden_sizes": [
+      64,
+      32,
+      16
+    ],
+    "dropout": 0.3
+  },
+  "resnet": {
+    "width": 32,
+    "hidden_width": 64,
+    "blocks": 2,
+    "dropout": 0.2
+  },
+  "tabpfn": {
+    "package_version": "2.0.9",
+    "model_path": "artifacts/pretrained/tabpfn-v2-classifier.ckpt",
+    "checkpoint_url": "https://huggingface.co/Prior-Labs/TabPFN-v2-clf/resolve/758fe2b61e7665bb6fadd86fa6e0130a4a9b7dc4/tabpfn-v2-classifier.ckpt",
+    "checkpoint_sha256": "f65a35685aeef42e31b796d9bfa34e68d6fc780bc98e7bff7763802964cf435f",
+    "n_estimators": 4
+  },
+  "input_format": "v2",
+  "output_root": "artifactsv2/suite_same_day"
+}

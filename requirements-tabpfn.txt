@@ -1,0 +1,5 @@
+# Use a separate Python 3.10-3.12 environment; do not downgrade the original environment.
+-r requirements-modeling.txt
+tabpfn==2.0.9
+scikit-learn==1.6.1
+torch==2.5.1
