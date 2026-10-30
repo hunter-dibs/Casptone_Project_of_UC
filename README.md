@@ -52,4 +52,8 @@ The `requirements` files list the software packages needed to run the analysis.
 
 ## About the data
 
-Participant data are kept locally and excluded from the GitHub upload. Running the analysis requires authorized access to the ADNI data and the appropriate software packages. This repository shares the project code, experiment settings, and figures.
+Participant-level ADNI data are subject to access restrictions and are therefore not included in this GitHub repository. Running the full analysis requires authorised access to the ADNI dataset and the required software packages.
+
+This repository contains the project code, experiment settings, processed outputs, and figures used in the study.
+
+The project dataset used for this research is maintained by the University of Canberra project team and sponsor. Researchers or interested parties who require access to the prepared dataset may contact the project team by email. Where appropriate and subject to applicable data access and sharing requirements, we are happy to provide further information or assist with dataset access.
